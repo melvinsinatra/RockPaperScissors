@@ -1,0 +1,118 @@
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+p, h1, h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+body {
+    background-color: #282B38;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 75%;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.game-view-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    column-gap: 5em;
+}
+
+.choice-image-container {
+    width: 20em;
+    height: 30em;
+    background-color: #212431;
+    border-radius: 3.125em;
+    border: 10px solid #50525F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choice-image {
+    width: 15.625rem;
+    object-fit: cover;
+}
+
+.choice-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-container {
+    display: flex;
+}
+
+#result {
+    max-width: 23.75em;
+    background-color: #238636;
+    padding: 40px;
+    border-radius: 0.3125em;
+    font-size: 5rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity, 450ms;
+}
+
+.game-choices-layout {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    align-items: flex-start;
+}
+
+.choices-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.5em;
+}
+
+.button-choices {
+    background-color: #212431;
+    border: 6px solid #50525F;
+    border-radius: 15px;
+    width: 6.25em;
+    height: 6.25em;
+    transition: transform 250ms linear;
+    cursor: pointer;
+}
+
+.button-choices:hover {
+    border: 6px solid rgb(142, 68, 203);
+    box-shadow: 0px 0px 5px rgba(142, 68, 203, 0.5);
+    transform: scale(1.2);
+}
+
+.button-choices img {
+    width: 3.75em;
+}

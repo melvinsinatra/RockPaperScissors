@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Rock, Paper, Scissors!</h1>
+        <section class="game-view-layout">
+            <div class="choice-container">
+                <h2>User: <span id="user-score">0</span></h2>
+                <div class="choice-image-container">
+                    <img class="choice-image" id="user-choice-image" src="images/blank.png" alt="">
+                </div>
+            </div>
+            <h2 id="result">You Won!</h2>
+            <div class="choice-container">
+                <h2>Computer: <span id="computer-score">0</span></h2>
+                <div class="choice-image-container">
+                    <img class="choice-image" id="computer-choice-image" src="images/blank.png" alt="">
+                </div>
+            </div>            
+        </section>
+        <section class="game-choices-layout">
+            <h2>Choose One:</h2>
+            <div class="choices-container">
+                <button class="button-choices" id="rock"><img src="images/rock.svg" alt=""></button>
+                <button class="button-choices" id="paper"><img src="images/paper.svg" alt=""></button>
+                <button class="button-choices" id="scissors"><img src="images/scissors.svg" alt=""></button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
